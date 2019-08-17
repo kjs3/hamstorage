@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "babel hamstorage.js -o dist/hamstorage.min.js --source-maps",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "yarn run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
