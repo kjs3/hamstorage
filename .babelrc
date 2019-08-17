@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["@babel/preset-env"],
+    ["minify", {
+      "mangle": {
+        "keepFnName": false,
+        "topLevel": true
+      },
+    }]
+  ],
+  "comments": false
+}

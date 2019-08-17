@@ -1,0 +1,32 @@
+{
+  "name": "hamstorage",
+  "version": "0.0.1",
+  "description": "localStorage made as small as possible",
+  "author": "Kenny Smith <mail@kjs3.com>",
+  "main": "dist/hamstorage.min.js",
+  "license": "MIT",
+  "homepage": "https://github.com/kjs3/hamstorage",
+  "keywords": [
+    "localstorage",
+    "storage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kjs3/hamstorage.git"
+  },
+  "bugs": {
+    "url": "http://github.com/kjs3/hamstorage/issues"
+  },
+  "scripts": {
+    "build": "babel hamstorage.js -o dist/hamstorage.min.js --source-maps",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "babel-preset-minify": "^0.5.1",
+    "jest": "^24.9.0"
+  }
+}
