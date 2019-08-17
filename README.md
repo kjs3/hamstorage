@@ -1,4 +1,4 @@
-# HamStorage
+# Hamstorage
 
 ![Hamster stuffing cheeks](https://upload.wikimedia.org/wikipedia/commons/8/85/Syrian_hamster_filling_his_cheek_pouches_with_Dandelion_leaves.JPG)
 
