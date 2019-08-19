@@ -3,10 +3,13 @@ const s = JSON.stringify
 const p = JSON.parse
 
 const canUseLS = _localStorageAvailable()
-const storage = _setupStorage()
+let storage
+
+// init storage
+_setupStorage()
 
 function _setupStorage() {
-  return canUseLS ? window.localStorage : new _alternativeStorage()
+  storage = canUseLS ? window.localStorage : new _alternativeStorage()
 }
 
 function _alternativeStorage() {
@@ -86,5 +89,6 @@ module.exports = {
   setItem: set,
   removeItem: rm,
   source: canUseLS ? 'localStorage' : 'alternative',
-  _storage: storage, // exported for testing
+  _setupStorage, // exported to allow reinitialization
+  _getStorage: () => storage // exported for testing
 }
